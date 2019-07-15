@@ -1,4 +1,4 @@
-venues = [
+venues = [ #A list of all venues.
 { 'address': "123 Main Street", 'city': "Toronto", 'wheelchair_accessible': True, 'capacity': 100 },
 { 'address': "567 Centre Street", 'city': "Toronto", 'wheelchair_accessible': False, 'capacity': 400 },
 { 'address': "9B Ontario Street", 'city': "Montreal", 'wheelchair_accessible': True, 'capacity': 1000 },
@@ -12,7 +12,7 @@ venues = [
 def check_venues(venues): #Returns a list of venues that are wheelchair accessible, and can fit at least 150 people.
     new_venues = []
 
-    for venue in venues:
+    for venue in venues: #Iterates through each venue in the venues list.
         if (venue['wheelchair_accessible'] and venue['capacity'] > 150): #If wheelchair_accessible is true, and capcity is over 150.
             new_venues.append(venue)
 
