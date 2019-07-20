@@ -18,4 +18,5 @@ def check_venues(venues): #Returns a list of venues that are wheelchair accessib
 
     return new_venues
 
-print(check_venues(venues))
+new_venues = check_venues(venues)
+print(new_venues)
